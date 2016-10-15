@@ -54,7 +54,7 @@ def system_timer(event, context):
                 raise Exception('Server Error')
             else:
                 print(event['minutes'])
-                if not myspace.update_service_state(context.function_name, 'minutes', event['minutes'], 'N'):
+                if not myspace.update_service_state(context.function_name, 'minutes', str(event['minutes']), 'N'):
                     raise Exception('Server Error')
             return
         
