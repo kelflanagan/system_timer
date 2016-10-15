@@ -107,7 +107,7 @@
             }
           },
           "requestTemplates": {
-            "application/json": "{\"resource_path\":\"$context.resourcePath\",\"http_method\":\"$context.httpMethod\",\"minutes\":$input.json('$.minute')}"
+            "application/json": "{\"resource_path\":\"$context.resourcePath\",\"http_method\":\"$context.httpMethod\",\"minutes\":$input.json('$.minutes')}"
           },
           "uri": "will be set when installed",
           "passthroughBehavior": "when_no_templates",
