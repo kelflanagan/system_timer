@@ -2,6 +2,7 @@ from __future__ import print_function
 
 import aws
 import myspace
+import string
 
 """ delete_resources() deletes all of the aws resources associated with this
 service.
