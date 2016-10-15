@@ -1,4 +1,3 @@
-from __future__ import print_function
 
 import aws
 import myspace
@@ -53,6 +52,8 @@ def system_timer(event, context):
             if 'minutes' not in event:
                 raise Exception('Server Error')
             else:
+                print('this should be in the log')
+                print(event['minutes'])
                 if not myspace.update_service_state(context.function_name, 'minutes', str(event['minutes']), 'N'):
                     raise Exception('Server Error')
             return
