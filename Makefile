@@ -1,5 +1,5 @@
 MODULE = system_timer
-SRC = $(MODULE).py aws.py myspace.py
+SRC = $(MODULE).py aws.py myspace.py util.py
 CFG = $(MODULE).cfg
 API = $(MODULE).api
 m='latest changes'
